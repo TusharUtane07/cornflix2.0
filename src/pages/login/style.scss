@@ -1,0 +1,29 @@
+@import "../../mixins.scss";
+
+.heading {
+  color: var(--pink);
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 14px;
+  h1 {
+    background-color: white;
+    margin: 12px;
+    padding: 8px 4px;
+    border-radius: 5px;
+    @include sm {
+      margin: 0 100px 0 100px;
+    }
+    @include lg {
+      margin: 0 300px 0 300px;
+    }
+    @include xl {
+      margin: 0 500px 0 500px;
+      padding: 12px 12px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
